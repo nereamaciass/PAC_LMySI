@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Tutorial Nerea Macias</title><!--Título que se verá en la pestaña del marcador-->
+    <link rel="stylesheet" href="style.css"><!--Enlace a css-->
+</head>
+<body>
+
+    <header><!--Título de la página-->
+        <h1>How To Windows y Ubuntu.</h1>
+    </header>
+
+    <main>
+        <nav id="menu"><!--Menú desplegable-->
+            <ul>
+                <li><a href="#programasymaquinasvirtual">Programas y máquina virtual</a><!--Enlace al apartado y como se llamará en esta línea-->
+                    <ul>
+                        <li><a href="#descargadelosprogramas">Primer paso</a></li><!--Submenú-->
+                    </ul>
+                </li>
+                <li><a href="#windows10">Windows 10</a>
+                    <ul>
+                        <li><a href="#instalaciondelamaquinavirtualwindows10">Primer paso</a></li>
+                        <li><a href="#configuraciondelainstalaciondesatendidawindows">Segundo paso</a></li>
+                        <li><a href="#ajustedehardwarewindows">Tercer paso</a></li>
+                        <li><a href="#discodurovirtualwindows">Cuarto paso</a></li>
+                        <li><a href="#resumendeinstalaciónwindows">Quinto paso</a></li>
+                    </ul>
+                </li>
+                <li><a href="#ubuntu">UBUNTU</a>
+                    <ul>
+                        <li><a href="#instalaciondelamaquinavirtualubuntu">Primer paso</a></li>
+                        <li><a href="#configuraciondelainstalaciondesatendidaubuntu">Segundo paso</a></li>
+                        <li><a href="#ajustedehardwareubuntu">Tercer paso</a></li>
+                        <li><a href="#discoduroubuntu">Cuarto paso</a></li>
+                        <li><a href="#resumendeinstalaciónubuntu">Quinto paso</a></li>
+                    </ul>
+                </li>
+                <li><a href="#samba">SAMBA</a>
+                    <ul>
+                        <li><a href="#instalaciondesamba">Primer paso</a></li>
+                        <li><a href="#configuraciondelservidor">Segundo paso</a></li>
+                        <li><a href="#agregarusuarioalservidorsamba">Tercer paso</a></li>
+                        <li><a href="#creaciondeunacarpetapublicayasignaciondepermisossamba">Cuarto paso</a></li>
+                        <li><a href="#conectarseasamba">Quinto paso</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="tutorial">
+            <div class="contenedor">
+                <div class="card"><!--Cards-->
+                  <figure>
+                    <img src="virtualbox.jpeg" alt="silent"/>      
+                  </figure>
+                  <div class="contenido">
+                    <h3>Programas y máqina virtual</h3>
+                    <p>En este apartado aprenderá a descargar, crear y configurar una máquina virtual.</p>
+                    <a href="#programasymaquinasvirtual">Ir al apartado</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <figure>
+                    <img src="windows_10.png" alt="silent"/>      
+                  </figure>
+                    <div class="contenido">
+                        <h3>Windows 10</h3>
+                        <p>Este apartado te enseñará a instalar Windows 10 en la máquina virtual.</p>
+                        <a href="#windows10">Ir al apartado</a>
+                    </div>
+                </div>
+                <div class="card">
+                  <figure>
+                    <img src="ubuntu.png" alt="silent"/>      
+                  </figure>
+                    <div class="contenido">
+                        <h3>Ubuntu</h3>
+                        <p>¿Quieres aprender a instalar Ubuntu en una máquina virtual?</p>
+                        <p>Este es tu apartado.</p>
+                        <a href="#ubuntu">Ir al apartado</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                      <img src="samba.png" alt="silent"/>      
+                    </figure>
+                      <div class="contenido">
+                          <h3>SAMBA</h3>
+                          <p>Aquí aprenderás a configurar e instalar SAMBA.</p>
+                          <a href="#samba">Ir al apartado</a>
+                      </div>
+                  </div>
+            </div>
+
+            <ol>
+                <p>Antes de empezar la instalación y configuración, deberás saber qué es una VirtualBox, un Sistema Operativo, una ISO y SAMBA, así que me pondré a ello para explicarte qué son y algunas características sobre ellos.</p>
+                <h3>¿Qué es una VirtualBox?</h3><!--Título con h3-->
+                <p>Una VirtualBox es un software de virtualización que permite crear máquinas virtuales en tu ordenador.</p>
+                <h4>¿Qué podemos hacer con VirtualBox?</h4>
+                <p>Con VirtualBox, puedes instalar y ejecutar múltiples sistemas operativos en una misma máquina física. Esto es útil para propósitos de desarrollo, pruebas de software, configuraciones de red, educación, entre otros. VirtualBox es una herramienta gratuita y de código abierto desarrollada por Oracle.</p>
+                <p>Al crear una máquina virtual con VirtualBox, puedes asignar recursos como memoria RAM, espacio de disco y procesador a cada sistema operativo virtual. Esto te permite experimentar con diferentes sistemas operativos y configuraciones sin afectar tu sistema principal.</p>
+                <h3>¿Qué es una máquina virtual?</h3>
+                <p>Una máquina virtual es un entorno virtual que simula un sistema informático completo, incluyendo hardware y software, dentro de tu ordenador físico.</p>
+                <h3>¿Qué es un Sistema Operativo?</h3>
+                <p>Un sistema operativo es un software que actúa como intermediario entre el hardware de una computadora y los programas de aplicación. Es un conjunto de programas que gestionan los recursos de hardware de la computadora y proporcionan servicios a los programas de software.</p>
+                <h4>¿Cuáles son las funciones de un Sistema Operativo?</h4>
+                <p>Algunas funciones clave de un sistema operativo incluyen la gestión de la memoria, la gestión del procesador, la gestión de archivos y directorios, la gestión de dispositivos de entrada/salida, y la interfaz de usuario.</p>
+                <h4>¿Cuáles son los Sitemas Operativos más comunes?</h4>    
+                <p>Los sistemas operativos más comunes son Windows, macOS, Linux y Android, cada uno con sus propias características y funcionalidades específicas.</p>
+                <h3>¿Qué es una ISO?</h3>
+                <p>Una ISO es un archivo informático donde se almacena una copia o imagen exacta de un sistema de archivos.</p>
+                <h3>¿Qué es SAMBA?</h3>
+                <p>SAMBA es un software que implementa el protocolo SMB y permite a las distribuciones de Linux/Ubuntu compartir archivos e impresoras con cualquier otro dispositivo conectado a la red.</p>
+            </ol>
+        
+            <ol>
+                <h1 id="programasymaquinasvirtual">Programas y máquina virtual</h1><!--Título con h1 y su id-->
+
+                <h2 id="descargadelosprogramas">Primer paso <i>"Descarga de los programas"</i></h2>
+                <p>Descargamos (eligiendo el Sistema Operativo en el que vayamos a instalarla) e instalamos la VirtualBox que la puedes encontrar <a href="https://www.virtualbox.org/" target="_blank">pinchando aquí</a>, lo único que debemos tener en cuenta es que creará un controlador virtual de tarjeta de red.</p>
+                <p>En mi caso, he elegido la opción marcada en azul.</p>
+                <img src="descarga_virtualbox.png" width="750" height="300">
+                <p>Para poder usar la VirtualBox necesitaremos un Sistema Operativo, así que instalaremos la ISO de Windows y la de Ubuntu en sus versiones 10 y 22.04.4 respectivamente.</p>
+                <p>Primero, descargaremos la ISO de Windows 10 a través de su página oficial que podrás encontrar <a href="https://www.microsoft.com/es-es/software-download/windows10%20" target="_blank">aquí</a>.</p>
+                <p>Para poder descargar la ISO, tendremos que hcaer click en "Descargar ahora la herramienta"</p>
+                <img src="descargar_ahora_la_herramienta.png" width="800" height="150">
+                <p>Una vez descargada la ISO de Windows 10, descargaremos la ISO de Ubuntu que, como se dijo anteriormente, será su versión 22.04.4 y la cuál se podrá encontrar <a href="https://ubuntu.com/download/desktop">aquí</a>, en su página web.</p>
+
+                <h1 id="windows10">Windows 10</h1>
+
+                <h2 id="instalaciondelamaquinavirtualwindows10">Primer paso <i>"Instalación de la máquina virtual Windows 10"</i></h2>
+                <p>Nombra y selecciona el Sistema Operativo que vayas a instalar en la máquina virtual.</p>
+                <p>Inserta la ISO que descargaste anteriormente y pulsa en siguiente.</p>
+                <img src="iso_windows_10.png" width="800" height="400"><!--Imagen con su alto y ancho-->
+
+                <h2 id="configuraciondelainstalaciondesatendidawindows">Segundo paso <i>"Configuración de la instalación desatendida"</i></h2><!--Título con h2, se usa la i para ponerla en cursiva-->
+                <p>Configura el usuario y la contraseña a tu gusto, una vez terminado</p>
+                <p>Una vez configurados, inserta la clave genérica de Windows que te facilitaré bajo la imagen (puedes copiarla y pegarla)</p>
+                <p>Puede que te dé problemas si windows aparece separado del número, en este caso, tendrás que quitar el espacio para que queden juntos y se quite el problema.</p>
+                <p>Tras insertar la clave y resolver el problema, si es que sale, pulsa en siguiente.</p>
+                <img src="usuario_y_contraseña_windows.png" width="800" height="400">
+                <p>*clave genérica de Windows: TX9XD-98N7V-6WMQ6-BX7FG-H8Q99*</p>
+
+                <h2 id="ajustedehardwarewindows">Tercer paso <i>"Ajuste de hardware"</i></h2>
+                <p>Ajusta el hardware poniendo de memoria base 4096MB, un total de 2 procesadores y pulsa siguiente.</p>
+                <img src="hardware_windows.png" width="800" height="400">
+
+                <h2 id="discodurovirtualwindows">Cuarto paso <i>"Disco duro virtual"</i></h2>
+                <p>Deja el disco duro tal y como te aparece al pulsa siguiente en el paso anterior, 50,00GB y pulsa en siguiente</p>
+                <img src="disco_duro_windows.png" width="800" height="400">
+
+                <h2 id="resumendeinstalaciónwindows">Quinto paso <i>"Resumen de instalación"</i></h2>
+                <p>Lee el resumen de la instalación que has ajustado en los pasos anteriores y, si todo está en orden, pulsa en terminar.</p>
+                <img src="resumen_windows.png" width="800" height="400">
+
+
+                <h1 id="ubuntu">Ubuntu</h1>
+
+                <h2 id="instalaciondelamaquinavirtualubuntu">Primer paso <i>"Instalación de la máquina virtual Ubuntu"</i></h2>
+                <p>Este paso es igual que el de la instalación de Windows 10.</p>
+                <p>Nombra y selecciona el Sistema Operativo que vayas a instalar en la máquina virtual.</p>
+                <p>Inserta la ISO que descargaste anteriormente y pulsa en siguiente.</p>
+                <img src="iso_ubuntu.png" width="800" height="400">
+
+                <h2 id="configuraciondelainstalaciondesatendidaubuntu">Segundo paso <i>"Configuración de la instalación desatendida"</i></h2>
+                <p>Configura el usuario y la contraseña a tu gusto, una vez terminado</p>
+                <p>A diferencia de Windows, Ubuntu no tiene clave genérica, así que dejaremos esa parte tal y como está.</p>
+                <p>Una vez realizado esto, seleccionaremos siguiente.</p>
+                <img src="usuario_y_contraseña_ubuntu.png" width="800" height="400">
+
+                <h2 id="ajustedehardwareubuntu">Tercer paso <i>"Ajuste de hardware"</i></h2>
+                <p>Ajusta el hardware poniendo de memoria base 4096MB, un total de 2 procesadores y pulsa siguiente.</p>
+                <img src="hardware_ubuntu.png" width="800" height="400">
+
+                <h2 id="discodurovirtualubuntu">Cuarto paso <i>"Disco duro virtual"</i></h2>
+                <p>Deja el disco duro tal y como te aparece al pulsa siguiente en el paso anterior, 25,00GB y pulsa en siguiente</p>
+                <img src="disco_duro_ubuntu.png" width="800" height="400">
+
+                <h2 id="resumendeinstalaciónubuntu">Quinto paso <i>"Resumen de instalación"</i></h2>
+                <p>Lee el resumen de la instalación que has ajustado en los pasos anteriores y, si todo está en orden, pulsa en terminar.</p>
+                <img src="resumen_ubuntu.png" width="800" height="400">  
+                
+                <h1 id="samba">SAMBA</h1>
+                <p>La instalación de SAMBA es muy sencilla.</p>
+
+                <h2 id="instalaciondesamba">Primer paso <i>"Instalación de SAMBA"</i></h2>
+                <p>Instala el paquete de SAMBA con el comando apt-get</p>
+                <p>Luego, comprueba que está bien instalado y activado</p>
+                <p>Una vez escrito el comando anterior y comprobado, te deberá salir el siguiente mensaje:</p>
+
+                <h2 id="configuraciondelservidorsamba">Segundo paso <i>"Configuración del servidor"</i></h2>
+                <p>Para poder configurar el servidor deberás crear un directorio, para ello puedes utilizar el comando <b>/samba</b>.</p>
+                <p>Una vez creado el directorio, tendrás que usar el comando nano para que deban entrar en el fichero <b>/etc/samba/smb.conf</b>.</p>
+                <p>A continuación, añadimos las siguientes líneas al final del fichero:</p>
+                <p><b>[samba-share]</b></p><!--Se usa la b para ponerla en negrita-->
+                <p><b>comment = Samba on Ubuntu</b></p>
+                <p><b>path = /samba</b></p>
+                <p><b>read only = no</b></p>
+                <p><b>browsable = yes</b></p>
+
+                <h2 id="agregarusuarioalservidorsamba">Tercer paso <i>"Agregar usuario al servidor SAMBA"</i></h2>
+                <p>SAMBA requiere de un usuario del sistema para acceder al recurso compartido, así que debes añadir un nuevo usuario al sistema usando este comando <b>useradd [nombre-usuario]</b>.</p>
+                <p>Una vez hayas agregado el nuevo usuario al sistema, deberás agregar el usuario al servidor de SAMBA usando este comando <b>smbpasswd -a [nombre-usuario]</b>.</p>
+                <p>Al ejecutar el comando, te pedirá una contraseña para el usuario la cuál sera la contraseña para conectarse a SAMBA.</p>
+                <video controls><source src="nuevo_usuario_samba.mp4" type="video/mp4" width="800" height="400"></video><!--Vídeo con su alto y ancho-->
+
+                <h2 id="creaciondeunacarpetapublicayasignaciondepermisos">Cuarto paso <i>"Creación de una carpeta pública y asignación de permisos"</i></h2>
+                <p>Para terminar, te hace falta crear la carpeta pública, la cual van a ver los usuarios que se conecten a tu servidor.</p>
+                <p>Crea el directorio <b>/samba/public</b>.</p>
+                <p>Una vez creado, escribe estos 3 comandos para establecerle todos los permisos necesarios para los demás usuarios que quieran conectarse al servidor.</p>
+                <p><b>sudo chown -R nobody:nogrop /samba/public</b></p>
+                <p><b>sudo chown -R 0777 /samba/public</b></p>
+                <p><b>sudo chgrp sambashare /samba/public</b></p>
+                <p>Ahora tendrás que reiniciar el servidor de SAMBA para aplicar todos los cambios, para ello tendras que usar el comando <b>sudo systemctl restart smbd.service</b>.</p>
+                <p>De esta forma ya tendrás instlado el servidor de SAMBA en Ubuntu.</p>
+
+                <h2 id="conectarseasamba">Quinto paso <i>"Conectarse a SAMBA"</i></h2>
+                <p>Antes de conectarte, deberás saber la dirección IP del servidor de SAMBA.</p>
+                <p>Para ello, uaremos el comando <b>ifconfig</b>.</p>
+                <p>Para conectarte desde Linux deberás ir al <i>Explorador de Archivos > Red</i>, entonces podrás ver como te aparece una carpeta con el nombre de tu usuario, dicha carpeta será tu carpeta de SAMBA.</p>
+                <p>Para conectarte desde Windows deberás de pulsar la combinación de teclas <i>Windows + r</i> para escribir dentro del campo: <i>//ip-servidor/samba-share</i>.</p>
+                <p>Sin embargo, si dispones de un Mac y quieres conectarte desde él, deberás ir al <i>Finder > Conectarse al servidor</i> y escribir dentro del campo: <i>smb://ip-servidor</i>.</p>
+            </ol>
+        </section>
+    </main>
+
+    <footer><!--Pie de página-->
+        <p>Copyright &#174; Nerea Macias Otero</p>
+    </footer>
+
+</body>
+</html>
